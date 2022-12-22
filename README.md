@@ -5,7 +5,8 @@
 - Prompts the user with the link to the website url (localhost:PORT)
 
 ```
-npx pkg index.js
+npm install
+npm run bundle
 ```
 
 https://www.npmjs.com/package/pkg

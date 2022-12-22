@@ -4,11 +4,18 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node index.js",
+    "bundle": "npx pkg index.js -c package.json"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "node-static": "^0.7.11"
+  },
+  "pkg": {
+    "scripts": "index.js",
+    "assets": "web/**/*",
+    "targets": [ "node14-linux-arm64" , "node16-linux-x64", "node16-macos-x64", "node16-win-x64"],
+    "outputPath": "dist"
   }
 }
