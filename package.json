@@ -10,12 +10,18 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "node-static": "^0.7.11"
+    "node-static": "^0.7.11",
+    "path": "^0.12.7"
   },
   "pkg": {
     "scripts": "index.js",
     "assets": "web/**/*",
-    "targets": [ "node14-linux-arm64" , "node16-linux-x64", "node16-macos-x64", "node16-win-x64"],
+    "targets": [
+      "node14-linux-arm64",
+      "node16-linux-x64",
+      "node16-macos-x64",
+      "node16-win-x64"
+    ],
     "outputPath": "dist"
   }
 }
